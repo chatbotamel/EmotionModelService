@@ -16,10 +16,10 @@ ADD . /webservice
 RUN pip install -r webservice/requirements.txt
 
 RUN python -m spacy download en
+RUN python -m nltk.downloader punkt
+RUN python -m nltk.downloader wordnet
 
 EXPOSE 80
 
 CMD ["python", "webservice/manage.py", "runserver", "0.0.0.0:80"]
-
-
 

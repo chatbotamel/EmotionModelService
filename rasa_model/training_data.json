@@ -425,102 +425,6 @@
         "intent": "name",
         "entities": [
           {
-            "start": 0,
-            "end": 4,
-            "value": "Lucy",
-            "entity": "name"
-          }
-        ],
-        "text": "Lucy"
-      },
-      {
-        "intent": "name",
-        "entities": [
-          {
-            "start": 0,
-            "end": 5,
-            "value": "Peter",
-            "entity": "name"
-          }
-        ],
-        "text": "Peter"
-      },
-      {
-        "intent": "name",
-        "entities": [
-          {
-            "start": 0,
-            "end": 4,
-            "value": "Mark",
-            "entity": "name"
-          }
-        ],
-        "text": "Mark"
-      },
-      {
-        "intent": "name",
-        "entities": [
-          {
-            "start": 0,
-            "end": 6,
-            "value": "Joseph",
-            "entity": "name"
-          }
-        ],
-        "text": "Joseph"
-      },
-      {
-        "intent": "name",
-        "entities": [
-          {
-            "start": 0,
-            "end": 3,
-            "value": "Tan",
-            "entity": "name"
-          }
-        ],
-        "text": "Tan"
-      },
-      {
-        "intent": "name",
-        "entities": [
-          {
-            "start": 0,
-            "end": 4,
-            "value": "Pete",
-            "entity": "name"
-          }
-        ],
-        "text": "Pete"
-      },
-      {
-        "intent": "name",
-        "entities": [
-          {
-            "start": 0,
-            "end": 4,
-            "value": "Elon",
-            "entity": "name"
-          }
-        ],
-        "text": "Elon"
-      },
-      {
-        "intent": "name",
-        "entities": [
-          {
-            "start": 0,
-            "end": 5,
-            "value": "Penny",
-            "entity": "name"
-          }
-        ],
-        "text": "Penny"
-      },
-      {
-        "intent": "name",
-        "entities": [
-          {
             "start": 8,
             "end": 14,
             "value": "Andrew",
@@ -819,15 +723,7 @@
       },
       {
         "intent": "resource_reclamation",
-        "entities": [
-          {
-            "start": 15,
-            "end": 23,
-            "value": "internet",
-            "entity": "service"
-          }
-        ],
-        "text": "I have limited internet"
+        "text": "I have limited [internet] service"
       },
       {
         "intent": "resource_reclamation",
@@ -843,27 +739,11 @@
       },
       {
         "intent": "resource_reclamation",
-        "entities": [
-          {
-            "start": 28,
-            "end": 36,
-            "value": "Internet",
-            "entity": "service"
-          }
-        ],
-        "text": "I have trouble accessing to Internet"
+        "text": "I have trouble accessing to [Internet]"
       },
       {
         "intent": "resource_reclamation",
-        "entities": [
-          {
-            "start": 27,
-            "end": 35,
-            "value": "Internet",
-            "entity": "service"
-          }
-        ],
-        "text": "I was unable to access the Internet"
+        "text": "I was unable to access the [internet]"
       },
       {
         "intent": "resource_reclamation",
@@ -891,19 +771,11 @@
       },
       {
         "intent": "resource_reclamation",
-        "entities": [
-          {
-            "start": 30,
-            "end": 35,
-            "value": "phone",
-            "entity": "product_name"
-          }
-        ],
-        "text": "I am having a problem with my phone"
+        "text": "I am having a problem with [product name]"
       },
       {
         "intent": "resource_reclamation",
-        "text": "the [product] (product_name) is unacceptable"
+        "text": "the [product] is unacceptable"
       },
       {
         "intent": "resource_reclamation",
@@ -911,27 +783,11 @@
       },
       {
         "intent": "resource_reclamation",
-        "entities": [
-          {
-            "start": 7,
-            "end": 14,
-            "value": "product",
-            "entity": "product_name"
-          }
-        ],
-        "text": "unused product"
+        "text": "unused [product]"
       },
       {
         "intent": "resource_reclamation",
-        "entities": [
-          {
-            "start": 10,
-            "end": 17,
-            "value": "product",
-            "entity": "product_name"
-          }
-        ],
-        "text": "worthless product"
+        "text": "worthless [product]"
       },
       {
         "intent": "resource_reclamation",
@@ -939,7 +795,7 @@
       },
       {
         "intent": "resource_reclamation",
-        "text": "[The battery] (product_name) runs down quickly"
+        "text": "[The battery] runs down quickly"
       },
       {
         "intent": "resource_reclamation",
@@ -959,11 +815,11 @@
       },
       {
         "intent": "resource_reclamation",
-        "text": "The [battery] (product_name) life is highly unacceptable"
+        "text": "The battery life is highly unacceptable"
       },
       {
         "intent": "resource_reclamation",
-        "text": "The [sound] (product_name) quality for the device is unacceptable"
+        "text": "The sound quality for the device is unacceptable"
       },
       {
         "intent": "resource_reclamation",
@@ -999,11 +855,7 @@
       },
       {
         "intent": "agent_reclamation",
-        "text": "not even a 'hello'"
-      },
-      {
-        "intent": "agent_reclamation",
-        "text": "Technical support TELL Me THAT THEY CANNOT HELP ME"
+        "text": "not even a \"hello”"
       },
       {
         "intent": "agent_gratitude",
@@ -1099,7 +951,7 @@
       },
       {
         "intent": "price_reclamation",
-        "text": "Too bad you have to pay up to [$$$] (money) a month for the service"
+        "text": "Too bad you have to pay up to [$$$] a month for the service"
       },
       {
         "intent": "price_reclamation",
@@ -1207,23 +1059,11 @@
       },
       {
         "intent": "recommendation",
-        "text": "Don't waste [$$$] (money)on this one"
-      },
-      {
-        "intent": "recommendation",
-        "text": "isn't the best one"
-      },
-      {
-        "intent": "recommendation",
-        "text": "it the best one"
-      },
-      {
-        "intent": "recommendation",
-        "text": "bad  experience."
+        "text": "Don't waste [$$$] on this one"
       },
       {
         "intent": "evaluation",
-        "text": "[10] (nb)out of [10] (nb) stars"
+        "text": "10 out of 10 stars"
       },
       {
         "intent": "evaluation",
@@ -1231,11 +1071,11 @@
       },
       {
         "intent": "evaluation",
-        "text": "[5] (nb)stars for it"
+        "text": "5 stars for it"
       },
       {
         "intent": "evaluation",
-        "text": "it deserves [5] (nb) stars"
+        "text": "it deserves 5 stars"
       },
       {
         "intent": "evaluation",
@@ -1251,7 +1091,7 @@
       },
       {
         "intent": "evaluation",
-        "text": "I'm going to round up to [4] (nb)stars"
+        "text": "I'm going to round up to 4 stars"
       },
       {
         "intent": "evaluation",
@@ -1259,7 +1099,7 @@
       },
       {
         "intent": "evaluation",
-        "text": "I give Wirefly [1] (nb) star"
+        "text": "I give Wirefly 1 star"
       },
       {
         "intent": "evaluation",
@@ -1270,43 +1110,43 @@
         "text": "FIVE STARS to them"
       },
       {
-        "intent": "asking_for_help",
+        "intent": "Asking for help",
         "text": "help"
       },
       {
-        "intent": "asking_for_help",
+        "intent": "Asking for help",
         "text": "help me"
       },
       {
-        "intent": "asking_for_help",
+        "intent": "Asking for help",
         "text": "I need help please"
       },
       {
-        "intent": "asking_for_help",
+        "intent": "Asking for help",
         "text": "Could you help me?"
       },
       {
-        "intent": "asking_for_help",
+        "intent": "Asking for help",
         "text": "Would you help me?"
       },
       {
-        "intent": "asking_for_help",
+        "intent": "Asking for help",
         "text": "Can you end me a hand?"
       },
       {
-        "intent": "asking_for_help",
+        "intent": "Asking for help",
         "text": "Will you help me?"
       },
       {
-        "intent": "asking_for_help",
+        "intent": "Asking for help",
         "text": "Can you help me?"
       },
       {
-        "intent": "asking_for_help",
+        "intent": "Asking for help",
         "text": "Could you do me a favor?"
       },
       {
-        "intent": "asking_for_help",
+        "intent": "Asking for help",
         "text": "Could you give me a hand?"
       }
     ],

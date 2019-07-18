@@ -2,8 +2,13 @@
     "language": "en",
     "pipeline": [
         {
-            "name": "tokenizer_whitespace",
+            "name": "WhitespaceTokenizer",
             "class": "rasa_nlu.tokenizers.whitespace_tokenizer.WhitespaceTokenizer"
+        },
+        {
+            "name": "RegexFeaturizer",
+            "file": "component_1_RegexFeaturizer.pkl",
+            "class": "rasa_nlu.featurizers.regex_featurizer.RegexFeaturizer"
         },
         {
             "BILOU_flag": true,
@@ -35,13 +40,13 @@
             "max_iterations": 50,
             "L1_c": 0.1,
             "L2_c": 0.1,
-            "name": "ner_crf",
-            "classifier_file": "crf_model.pkl",
+            "name": "CRFEntityExtractor",
+            "file": "component_2_CRFEntityExtractor.pkl",
             "class": "rasa_nlu.extractors.crf_entity_extractor.CRFEntityExtractor"
         },
         {
-            "name": "ner_synonyms",
-            "synonyms_file": null,
+            "name": "EntitySynonymMapper",
+            "file": null,
             "class": "rasa_nlu.extractors.entity_synonyms.EntitySynonymMapper"
         },
         {
@@ -57,8 +62,8 @@
             "lowercase": true,
             "OOV_token": null,
             "OOV_words": [],
-            "name": "intent_featurizer_count_vectors",
-            "featurizer_file": "intent_featurizer_count_vectors.pkl",
+            "name": "CountVectorsFeaturizer",
+            "file": "component_4_CountVectorsFeaturizer.pkl",
             "class": "rasa_nlu.featurizers.count_vectors_featurizer.CountVectorsFeaturizer"
         },
         {
@@ -86,12 +91,12 @@
             "intent_split_symbol": "_",
             "evaluate_every_num_epochs": 10,
             "evaluate_on_num_examples": 1000,
-            "name": "intent_classifier_tensorflow_embedding",
-            "classifier_file": "intent_classifier_tensorflow_embedding.ckpt",
+            "name": "EmbeddingIntentClassifier",
+            "file": "component_5_EmbeddingIntentClassifier",
             "class": "rasa_nlu.classifiers.embedding_intent_classifier.EmbeddingIntentClassifier"
         }
     ],
     "training_data": "training_data.json",
-    "trained_at": "20190422-140050",
-    "rasa_nlu_version": "0.14.6"
+    "trained_at": "20190716-155658",
+    "rasa_nlu_version": "0.15.1"
 }
